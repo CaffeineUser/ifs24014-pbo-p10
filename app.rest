@@ -98,8 +98,16 @@ Authorization: {{bearerToken}}
 
 # @name PutCashFlowById
 PUT {{BaseUrl}}/cash-flows/{{cashFlowId}}
-Content-Type: application/json
 Authorization: {{bearerToken}}
+Content-Type: application/json
+
+{
+    "type": "Inflow",
+    "source": "Freelance Project",
+    "label": "proyek-freelance",
+    "amount": 5000000,
+    "description": "Pendapatan dari proyek freelance pengembangan web."
+}
 ###
 
 # @name DeleteCashFlowById
